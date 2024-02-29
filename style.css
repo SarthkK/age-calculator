@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
+:root{
+    --Purple: hsl(259, 100%, 65%);
+    --Light-red: hsl(0, 100%, 67%);
+    --White: hsl(0, 0%, 100%);
+    --Light-grey: hsl(0, 0%, 86%);
+    --Smokey-grey: hsl(0, 1%, 44%);
+    --Off-black: hsl(0, 0%, 8%);
+    --Off-white: hsl(0, 0%, 94%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: poppins;
+    background-color: var(--Off-white);
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* padding: 20px; */
+}
+
+.card {
+    background-color: var(--White);
+    width: 700px;
+    padding: 50px;
+    border-radius: 20px 20px 100px 20px;
+    margin: 20px;
+}
+
+.card form {
+    display: flex;
+}
+
+.card form .field {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.card form .field label {
+    color: var(--Smokey-grey);
+    letter-spacing: 3px;
+    font-weight: 400;
+    font-size: small;
+    margin-bottom: 6px;
+}
+
+.card form .field input {
+    text-align: left;
+    font-size: 32px;
+    padding: 8px 15px;
+    width: 140px;
+    border: 1px solid var(--Off-white);
+    border-radius: 5px;
+    font-weight: 800;
+    caret-color: var(--Purple);
+}
+
+.card form .field input:focus {
+    border: 1px solid var(--Purple);
+}
+
+.card form #arrow {
+    position: relative;
+    top: 105px;
+    background-color: var(--Purple);
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    border: 15px solid var(--Purple);
+}
+
+.card form #arrow:hover{
+    background-color: var(--Off-black);
+    border-color: var(--Off-black);
+}
+
+hr {
+    margin: 20px;
+    border: 1px solid var(--Off-white);
+    color: var(--Off-black);
+}
+
+h1 {
+    margin-left: 20px;
+    font-size: 64px;
+    font-weight: 800;
+    font-style: italic;
+    line-height: 70px;
+}
+
+h1 span {
+    color: var(--Purple);
+}
+.attribution { 
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 735px){
+    .card {
+        margin: 20px;
+        padding: 80px 20px;
+        border-radius: 30px 30px 120px 30px;
+    }
+    
+    .card form #arrow {
+        position: relative;
+        top: 165px;
+        right: 50%;
+        transform: translateX(50%);
+        width: 95px;
+        height: 95px;
+        border: 25px solid var(--Purple);
+    }
+    .card form .field input {
+        text-align: left;
+        font-size: 32px;
+        padding: 8px 15px;
+        border: 1px solid var(--Off-white);
+        border-radius: 5px;
+        font-weight: 800;
+        caret-color: var(--Purple);
+    }
+
+    .card form .field label {
+        color: var(--Smokey-grey);
+        letter-spacing: 3px;
+        font-weight: 400;
+        font-size: 18px;
+        margin-bottom: 6px;
+    }
+
+    hr {
+        margin: 80px 0px;
+    }
+
+    h1 {
+        margin-left: 20px;
+        font-size: 64px;
+        font-weight: 800;
+        font-style: italic;
+        line-height: 70px;
+    }
+}

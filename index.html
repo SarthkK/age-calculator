@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <script src="script.js" defer></script>
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+</head>
+<body>
+  <main>
+    <div class="card">
+      <form id="dateform">
+        <div class="field">
+          <label for="day" id="daylabel">DAY</label>
+         <input type="week" placeholder="DD" id="day" required min="1" max="31">
+        </div>
+        <div class="field">
+          <label for="month" id="monthlabel">MONTH</label>
+          <input type="month" placeholder="MM" id="month" required min="1" max="12">
+        </div>
+        <div class="field">
+          <Label for="year" id="yearlabel">YEAR</Label>
+          <input type="month" placeholder="YYYY" id="year" required>
+        </div>
+        <input type="image" src="assets/images/icon-arrow.svg" id="arrow">
+      </form>
+      <hr>
+      <h1><span id="years">--</span> years</h1>
+      <h1><span id="months">--</span> months</h1>
+      <h1><span id="days">--</span> days</h1>
+    </div>
+  </main>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Sarthk Kharwal</a>.
+  </div>
+</body>
+</html>
